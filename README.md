@@ -8,11 +8,12 @@ These script show how to use Email Security Appliance (ESA)  API.
 How to install:
 ====
 To install and set up the script, follow these steps:  
-	1.	Clone the repository to your local machine: ```git clone https://github.com/Gyuri1/ESA_URL_list```  
-	2.	Navigate to the project directory: ```cd ESA_URL_list```  
- 	3.	Ensure you have Python 3 installed. You can check your Python version with: ```python3 --version```  
-  4.  Please install ```requests``` package using ```pip```: ```pip install requests```  
-  5.  Please update ```esa_credentials.py``` with Your ESA credentials! 
+  1.	Clone the repository to your local machine: ```git clone https://github.com/Gyuri1/ESA_URL_list```  
+  2.	Navigate to the project directory: ```cd ESA_URL_list```
+  3.	Ensure you have Python 3 installed. You can check your Python version with: ```python3 --version```
+  4.	Please install ```requests``` package using ```pip```: ```pip install requests```
+  5.	Please update ```esa_credentials.py``` with Your ESA credentials!
+  6.	Please check the port = "4431" as an API port for ESA in the python scripts!
 
 How to run:
 ====
