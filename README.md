@@ -17,7 +17,7 @@ To install and set up the script, follow these steps:
 How to run:
 ====
 
-1. Show URL list from ESA
+Show URL list from ESA
 
     python3 esa_url_list.py
 
@@ -25,7 +25,7 @@ How to run:
 Expected Output: 
 ====
 
-After running the script, you should obtain a CSV file named firewall-rules.csv containing the generated firewall rules.  
+After running the script, you should see similar output:  
 
    ```sh
 python3 esa_url_list.py
@@ -44,3 +44,46 @@ Retrieving URL list from the Email Security Appliance...
 }
 
  ```
+
+How to run the POST request:
+====
+
+Add a new URL list to ESA:
+
+    python3 esa_post_url_list.py -f test.json
+
+where ```-f``` is the mandatory argument for the JSON format filename. 
+
+
+Expected Output: 
+====
+
+After running the script, you should see similar output: 
+
+   ```sh
+python3 esa_post_url_list.py -f test.json
+Reading JSON file...
+URL List Name: test
+Sending URL list to Email Security Appliance...
+url: https://esa.company.com:4431/esa/api/v2.0/config/url_lists/test?device_type=esa
+response.status_code: 201
+Good request: {
+    "data": {
+        "message": "Added Successfully"
+    }
+}
+
+ ```
+
+
+
+
+
+
+Comment:
+- ESA API POST request requires the correct  Content-Type header! 
+
+
+Reference:
+https://www.cisco.com/c/en/us/td/docs/security/esa/esa15-0/api_guide/b_Secure_Email_API_Guide_15-0/b_ESA_API_Guide_chapter_010.html#Cisco_Concept.dita_3cc91316-6b13-4d8a-ad88-d97847ed65cc
+
