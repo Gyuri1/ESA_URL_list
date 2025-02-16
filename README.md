@@ -76,6 +76,8 @@ Good request: {
  ```
 
 
+This picture shows the uploaded URL List on ESA GUI:
+
 ![Alt text](esa-gui.png?raw=true "ESA GUI with the URL List")
 
 
